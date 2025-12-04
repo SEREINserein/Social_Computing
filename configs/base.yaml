@@ -1,0 +1,21 @@
+evaluation:
+  random_state: 42
+  test_size: 0.25
+features:
+  max_features: 5000
+  ngram_range:
+  - 1
+  - 2
+intervention:
+  cooldown_days: 7
+  max_daily_flags: 100
+  threshold: 0.7
+model:
+  params:
+    learning_rate: 0.08
+    n_estimators: 300
+  type: xgb_like
+simulation:
+  fraud_ratio: 0.08
+  num_users: 2000
+  seed: 42
